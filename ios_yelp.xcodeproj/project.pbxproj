@@ -220,11 +220,27 @@
 		204FBEEF195621140026AEE2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				204FBEF51956370E0026AEE2 /* Table View Cells */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		204FBEF51956370E0026AEE2 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEF61956372D0026AEE2 /* Business */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		204FBEF61956372D0026AEE2 /* Business */ = {
+			isa = PBXGroup;
+			children = (
 				204FBEF0195621320026AEE2 /* BusinessTableViewCell.h */,
 				204FBEF1195621320026AEE2 /* BusinessTableViewCell.m */,
 				204FBEF2195621320026AEE2 /* BusinessTableViewCell.xib */,
 			);
-			name = UI;
+			name = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

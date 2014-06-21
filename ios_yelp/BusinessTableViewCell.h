@@ -11,5 +11,6 @@
 @interface BusinessTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *photoBoxImageView;
 
 @end

@@ -10,6 +10,9 @@
 #import "FiltersViewController.h"
 #import "YelpClient.h"
 #import "BusinessTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -131,13 +134,28 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     static NSString *cellIdentifier = @"BusinessTableViewCell";
     BusinessTableViewCell *cell = [self.businessesTableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     NSDictionary *business = self.businesses[indexPath.row];
+    NSLog(@"business: %@", business);
     
-    // name
+    // Name
     NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
     cell.nameLabel.text = name;
+    
+    // Photo Box
+    // Movie Thumbnail
+    [cell.photoBoxImageView setAlpha:0.0f];
+    [cell.photoBoxImageView setImageWithURL:[NSURL URLWithString:business[@"image_url"]]
+                           placeholderImage:[UIImage imageNamed:@"image-photo-box-placeholder"]
+                                  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                                      // Fade in image
+                                      [UIView beginAnimations:@"fade in" context:nil];
+                                      [UIView setAnimationDuration:1.0];
+                                      [cell.photoBoxImageView setAlpha:1.0f];
+                                      [UIView commitAnimations];
+                                  }
+                usingActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite
+     ];
     
     return cell;
 }

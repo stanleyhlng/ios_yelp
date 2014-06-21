@@ -7,17 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "AVHexColor.h"
 #import "SearchViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIViewController *vc = [[SearchViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.rootViewController = [[SearchViewController alloc] init];
+    self.window.rootViewController = nvc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [self customizeNavBarAppearance];
+    [self customizeStatusBar];
+
     return YES;
 }
 
@@ -48,4 +55,19 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)customizeStatusBar
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+}
+
+- (void)customizeNavBarAppearance
+{
+    id navigationBarAppearance = [UINavigationBar appearance];
+    [navigationBarAppearance setTitleTextAttributes:@{
+       NSForegroundColorAttributeName:[UIColor whiteColor],
+       NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0f]
+       }];
+    [navigationBarAppearance setTintColor:[AVHexColor colorWithHexString:@"#F7F7F7"]];
+    [navigationBarAppearance setBarTintColor:[AVHexColor colorWithHexString:@"#BA0C03"]];
+}
 @end

@@ -1,1093 +1,563 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0E9813C3344648629665312B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1D06B23090DE42259C04BAD9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E9813C3344648629665312B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEA219554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEB419554E830026AEE2</string>
-				<string>204FBECD19554E830026AEE2</string>
-				<string>204FBEAD19554E830026AEE2</string>
-				<string>204FBEAC19554E830026AEE2</string>
-				<string>AFE69DBC7ED14ACC88FEA5E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEA319554E830026AEE2</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Stanley Ng</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>204FBEC519554E830026AEE2</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>204FBEAA19554E830026AEE2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>204FBEA619554E830026AEE2</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>204FBEA219554E830026AEE2</string>
-			<key>productRefGroup</key>
-			<string>204FBEAC19554E830026AEE2</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>204FBEAA19554E830026AEE2</string>
-				<string>204FBEC519554E830026AEE2</string>
-			</array>
-		</dict>
-		<key>204FBEA619554E830026AEE2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>204FBED519554E830026AEE2</string>
-				<string>204FBED619554E830026AEE2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>204FBEA719554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBEBF19554E830026AEE2</string>
-				<string>204FBEE219554FA40026AEE2</string>
-				<string>204FBEBB19554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEA819554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBEB119554E830026AEE2</string>
-				<string>204FBEB319554E830026AEE2</string>
-				<string>204FBEAF19554E830026AEE2</string>
-				<string>1D06B23090DE42259C04BAD9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEA919554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBEB919554E830026AEE2</string>
-				<string>204FBEC119554E830026AEE2</string>
-				<string>204FBEE319554FA40026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEAA19554E830026AEE2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>204FBED719554E830026AEE2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>47BE83017CEF4B7DB3200F41</string>
-				<string>204FBEA719554E830026AEE2</string>
-				<string>204FBEA819554E830026AEE2</string>
-				<string>204FBEA919554E830026AEE2</string>
-				<string>EA4A5678CE9A4D06AC435B83</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ios_yelp</string>
-			<key>productName</key>
-			<string>ios_yelp</string>
-			<key>productReference</key>
-			<string>204FBEAB19554E830026AEE2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>204FBEAB19554E830026AEE2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ios_yelp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>204FBEAC19554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEAB19554E830026AEE2</string>
-				<string>204FBEC619554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEAD19554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEAE19554E830026AEE2</string>
-				<string>204FBEB019554E830026AEE2</string>
-				<string>204FBEB219554E830026AEE2</string>
-				<string>204FBEC719554E830026AEE2</string>
-				<string>0E9813C3344648629665312B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEAE19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>204FBEAF19554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEAE19554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEB019554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>204FBEB119554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEB019554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEB219554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>204FBEB319554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEB219554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEB419554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEDE19554F7A0026AEE2</string>
-				<string>204FBEDD19554F710026AEE2</string>
-				<string>204FBEBD19554E830026AEE2</string>
-				<string>204FBEBE19554E830026AEE2</string>
-				<string>204FBEC019554E830026AEE2</string>
-				<string>204FBEB519554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ios_yelp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEB519554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEB619554E830026AEE2</string>
-				<string>204FBEB719554E830026AEE2</string>
-				<string>204FBEBA19554E830026AEE2</string>
-				<string>204FBEBC19554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEB619554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ios_yelp-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEB719554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEB819554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEB819554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEB919554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEB719554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEBA19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEBB19554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEBA19554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEBC19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ios_yelp-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEBD19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEBE19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEBF19554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEBE19554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEC019554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEC119554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEC019554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEC219554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBED419554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEC319554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBEC819554E830026AEE2</string>
-				<string>204FBECA19554E830026AEE2</string>
-				<string>204FBEC919554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEC419554E830026AEE2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>204FBED219554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>204FBEC519554E830026AEE2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>204FBEDA19554E830026AEE2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>204FBEC219554E830026AEE2</string>
-				<string>204FBEC319554E830026AEE2</string>
-				<string>204FBEC419554E830026AEE2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>204FBECC19554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ios_yelpTests</string>
-			<key>productName</key>
-			<string>ios_yelpTests</string>
-			<key>productReference</key>
-			<string>204FBEC619554E830026AEE2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>204FBEC619554E830026AEE2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ios_yelpTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>204FBEC719554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>204FBEC819554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEC719554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEC919554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEAE19554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBECA19554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEB219554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBECB19554E830026AEE2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>204FBEA319554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>204FBEAA19554E830026AEE2</string>
-			<key>remoteInfo</key>
-			<string>ios_yelp</string>
-		</dict>
-		<key>204FBECC19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>204FBEAA19554E830026AEE2</string>
-			<key>targetProxy</key>
-			<string>204FBECB19554E830026AEE2</string>
-		</dict>
-		<key>204FBECD19554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBED319554E830026AEE2</string>
-				<string>204FBECE19554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ios_yelpTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBECE19554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBECF19554E830026AEE2</string>
-				<string>204FBED019554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBECF19554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ios_yelpTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBED019554E830026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBED119554E830026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBED119554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBED219554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBED019554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBED319554E830026AEE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ios_yelpTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBED419554E830026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBED319554E830026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBED519554E830026AEE2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>204FBED619554E830026AEE2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>204FBED719554E830026AEE2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>204FBED819554E830026AEE2</string>
-				<string>204FBED919554E830026AEE2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>204FBED819554E830026AEE2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AFE69DBC7ED14ACC88FEA5E6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ios_yelp/ios_yelp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios_yelp/ios_yelp-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>204FBED919554E830026AEE2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AFE69DBC7ED14ACC88FEA5E6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ios_yelp/ios_yelp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios_yelp/ios_yelp-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>204FBEDA19554E830026AEE2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>204FBEDB19554E830026AEE2</string>
-				<string>204FBEDC19554E830026AEE2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>204FBEDB19554E830026AEE2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ios_yelp.app/ios_yelp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ios_yelp/ios_yelp-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>ios_yelpTests/ios_yelpTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>204FBEDC19554E830026AEE2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ios_yelp.app/ios_yelp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ios_yelp/ios_yelp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ios_yelpTests/ios_yelpTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>204FBEDD19554F710026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>204FBEDF19554FA40026AEE2</string>
-				<string>204FBEE019554FA40026AEE2</string>
-				<string>204FBEE119554FA40026AEE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEDE19554F7A0026AEE2</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>API</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEDF19554FA40026AEE2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SearchViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEE019554FA40026AEE2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SearchViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEE119554FA40026AEE2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>SearchViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>204FBEE219554FA40026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEE019554FA40026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>204FBEE319554FA40026AEE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>204FBEE119554FA40026AEE2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>47BE83017CEF4B7DB3200F41</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AFE69DBC7ED14ACC88FEA5E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA4A5678CE9A4D06AC435B83</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>204FBEA319554E830026AEE2</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D06B23090DE42259C04BAD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9813C3344648629665312B /* libPods.a */; };
+		204FBEAF19554E830026AEE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEAE19554E830026AEE2 /* Foundation.framework */; };
+		204FBEB119554E830026AEE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEB019554E830026AEE2 /* CoreGraphics.framework */; };
+		204FBEB319554E830026AEE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEB219554E830026AEE2 /* UIKit.framework */; };
+		204FBEB919554E830026AEE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEB719554E830026AEE2 /* InfoPlist.strings */; };
+		204FBEBB19554E830026AEE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEBA19554E830026AEE2 /* main.m */; };
+		204FBEBF19554E830026AEE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEBE19554E830026AEE2 /* AppDelegate.m */; };
+		204FBEC119554E830026AEE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEC019554E830026AEE2 /* Images.xcassets */; };
+		204FBEC819554E830026AEE2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEC719554E830026AEE2 /* XCTest.framework */; };
+		204FBEC919554E830026AEE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEAE19554E830026AEE2 /* Foundation.framework */; };
+		204FBECA19554E830026AEE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204FBEB219554E830026AEE2 /* UIKit.framework */; };
+		204FBED219554E830026AEE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 204FBED019554E830026AEE2 /* InfoPlist.strings */; };
+		204FBED419554E830026AEE2 /* ios_yelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBED319554E830026AEE2 /* ios_yelpTests.m */; };
+		204FBEE219554FA40026AEE2 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEE019554FA40026AEE2 /* SearchViewController.m */; };
+		204FBEE319554FA40026AEE2 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEE119554FA40026AEE2 /* SearchViewController.xib */; };
+		204FBEE61955FF590026AEE2 /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEE51955FF580026AEE2 /* YelpClient.m */; };
+		204FBEED195614240026AEE2 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEEB195614240026AEE2 /* FiltersViewController.m */; };
+		204FBEEE195614240026AEE2 /* FiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEEC195614240026AEE2 /* FiltersViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		204FBECB19554E830026AEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 204FBEA319554E830026AEE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204FBEAA19554E830026AEE2;
+			remoteInfo = ios_yelp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9813C3344648629665312B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		204FBEAB19554E830026AEE2 /* ios_yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		204FBEAE19554E830026AEE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		204FBEB019554E830026AEE2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		204FBEB219554E830026AEE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		204FBEB619554E830026AEE2 /* ios_yelp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios_yelp-Info.plist"; sourceTree = "<group>"; };
+		204FBEB819554E830026AEE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		204FBEBA19554E830026AEE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		204FBEBC19554E830026AEE2 /* ios_yelp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_yelp-Prefix.pch"; sourceTree = "<group>"; };
+		204FBEBD19554E830026AEE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		204FBEBE19554E830026AEE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		204FBEC019554E830026AEE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		204FBEC619554E830026AEE2 /* ios_yelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_yelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		204FBEC719554E830026AEE2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		204FBECF19554E830026AEE2 /* ios_yelpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios_yelpTests-Info.plist"; sourceTree = "<group>"; };
+		204FBED119554E830026AEE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		204FBED319554E830026AEE2 /* ios_yelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_yelpTests.m; sourceTree = "<group>"; };
+		204FBEDF19554FA40026AEE2 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		204FBEE019554FA40026AEE2 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		204FBEE119554FA40026AEE2 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		204FBEE41955FF580026AEE2 /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpClient.h; sourceTree = "<group>"; };
+		204FBEE51955FF580026AEE2 /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpClient.m; sourceTree = "<group>"; };
+		204FBEEA195614240026AEE2 /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		204FBEEB195614240026AEE2 /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		204FBEEC195614240026AEE2 /* FiltersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiltersViewController.xib; sourceTree = "<group>"; };
+		AFE69DBC7ED14ACC88FEA5E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		204FBEA819554E830026AEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBEB119554E830026AEE2 /* CoreGraphics.framework in Frameworks */,
+				204FBEB319554E830026AEE2 /* UIKit.framework in Frameworks */,
+				204FBEAF19554E830026AEE2 /* Foundation.framework in Frameworks */,
+				1D06B23090DE42259C04BAD9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204FBEC319554E830026AEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBEC819554E830026AEE2 /* XCTest.framework in Frameworks */,
+				204FBECA19554E830026AEE2 /* UIKit.framework in Frameworks */,
+				204FBEC919554E830026AEE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204FBEA219554E830026AEE2 = {
+			isa = PBXGroup;
+			children = (
+				204FBEB419554E830026AEE2 /* ios_yelp */,
+				204FBECD19554E830026AEE2 /* ios_yelpTests */,
+				204FBEAD19554E830026AEE2 /* Frameworks */,
+				204FBEAC19554E830026AEE2 /* Products */,
+				AFE69DBC7ED14ACC88FEA5E6 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		204FBEAC19554E830026AEE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEAB19554E830026AEE2 /* ios_yelp.app */,
+				204FBEC619554E830026AEE2 /* ios_yelpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		204FBEAD19554E830026AEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEAE19554E830026AEE2 /* Foundation.framework */,
+				204FBEB019554E830026AEE2 /* CoreGraphics.framework */,
+				204FBEB219554E830026AEE2 /* UIKit.framework */,
+				204FBEC719554E830026AEE2 /* XCTest.framework */,
+				0E9813C3344648629665312B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		204FBEB419554E830026AEE2 /* ios_yelp */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEE8195605C20026AEE2 /* Controllers */,
+				204FBEE7195605B90026AEE2 /* Clients */,
+				204FBEBD19554E830026AEE2 /* AppDelegate.h */,
+				204FBEBE19554E830026AEE2 /* AppDelegate.m */,
+				204FBEC019554E830026AEE2 /* Images.xcassets */,
+				204FBEB519554E830026AEE2 /* Supporting Files */,
+			);
+			path = ios_yelp;
+			sourceTree = "<group>";
+		};
+		204FBEB519554E830026AEE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEB619554E830026AEE2 /* ios_yelp-Info.plist */,
+				204FBEB719554E830026AEE2 /* InfoPlist.strings */,
+				204FBEBA19554E830026AEE2 /* main.m */,
+				204FBEBC19554E830026AEE2 /* ios_yelp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		204FBECD19554E830026AEE2 /* ios_yelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				204FBED319554E830026AEE2 /* ios_yelpTests.m */,
+				204FBECE19554E830026AEE2 /* Supporting Files */,
+			);
+			path = ios_yelpTests;
+			sourceTree = "<group>";
+		};
+		204FBECE19554E830026AEE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				204FBECF19554E830026AEE2 /* ios_yelpTests-Info.plist */,
+				204FBED019554E830026AEE2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		204FBEDD19554F710026AEE2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEDF19554FA40026AEE2 /* SearchViewController.h */,
+				204FBEE019554FA40026AEE2 /* SearchViewController.m */,
+				204FBEE119554FA40026AEE2 /* SearchViewController.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		204FBEDE19554F7A0026AEE2 /* Yelp */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEE41955FF580026AEE2 /* YelpClient.h */,
+				204FBEE51955FF580026AEE2 /* YelpClient.m */,
+			);
+			name = Yelp;
+			sourceTree = "<group>";
+		};
+		204FBEE7195605B90026AEE2 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEDE19554F7A0026AEE2 /* Yelp */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		204FBEE8195605C20026AEE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEE91956140D0026AEE2 /* Filters */,
+				204FBEDD19554F710026AEE2 /* Search */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		204FBEE91956140D0026AEE2 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEEA195614240026AEE2 /* FiltersViewController.h */,
+				204FBEEB195614240026AEE2 /* FiltersViewController.m */,
+				204FBEEC195614240026AEE2 /* FiltersViewController.xib */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204FBEAA19554E830026AEE2 /* ios_yelp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204FBED719554E830026AEE2 /* Build configuration list for PBXNativeTarget "ios_yelp" */;
+			buildPhases = (
+				47BE83017CEF4B7DB3200F41 /* Check Pods Manifest.lock */,
+				204FBEA719554E830026AEE2 /* Sources */,
+				204FBEA819554E830026AEE2 /* Frameworks */,
+				204FBEA919554E830026AEE2 /* Resources */,
+				EA4A5678CE9A4D06AC435B83 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios_yelp;
+			productName = ios_yelp;
+			productReference = 204FBEAB19554E830026AEE2 /* ios_yelp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		204FBEC519554E830026AEE2 /* ios_yelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204FBEDA19554E830026AEE2 /* Build configuration list for PBXNativeTarget "ios_yelpTests" */;
+			buildPhases = (
+				204FBEC219554E830026AEE2 /* Sources */,
+				204FBEC319554E830026AEE2 /* Frameworks */,
+				204FBEC419554E830026AEE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				204FBECC19554E830026AEE2 /* PBXTargetDependency */,
+			);
+			name = ios_yelpTests;
+			productName = ios_yelpTests;
+			productReference = 204FBEC619554E830026AEE2 /* ios_yelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		204FBEA319554E830026AEE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Stanley Ng";
+				TargetAttributes = {
+					204FBEC519554E830026AEE2 = {
+						TestTargetID = 204FBEAA19554E830026AEE2;
+					};
+				};
+			};
+			buildConfigurationList = 204FBEA619554E830026AEE2 /* Build configuration list for PBXProject "ios_yelp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 204FBEA219554E830026AEE2;
+			productRefGroup = 204FBEAC19554E830026AEE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				204FBEAA19554E830026AEE2 /* ios_yelp */,
+				204FBEC519554E830026AEE2 /* ios_yelpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		204FBEA919554E830026AEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBEB919554E830026AEE2 /* InfoPlist.strings in Resources */,
+				204FBEC119554E830026AEE2 /* Images.xcassets in Resources */,
+				204FBEEE195614240026AEE2 /* FiltersViewController.xib in Resources */,
+				204FBEE319554FA40026AEE2 /* SearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204FBEC419554E830026AEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBED219554E830026AEE2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47BE83017CEF4B7DB3200F41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4A5678CE9A4D06AC435B83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		204FBEA719554E830026AEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBEE61955FF590026AEE2 /* YelpClient.m in Sources */,
+				204FBEBF19554E830026AEE2 /* AppDelegate.m in Sources */,
+				204FBEE219554FA40026AEE2 /* SearchViewController.m in Sources */,
+				204FBEED195614240026AEE2 /* FiltersViewController.m in Sources */,
+				204FBEBB19554E830026AEE2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204FBEC219554E830026AEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204FBED419554E830026AEE2 /* ios_yelpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		204FBECC19554E830026AEE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204FBEAA19554E830026AEE2 /* ios_yelp */;
+			targetProxy = 204FBECB19554E830026AEE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		204FBEB719554E830026AEE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204FBEB819554E830026AEE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		204FBED019554E830026AEE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204FBED119554E830026AEE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		204FBED519554E830026AEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		204FBED619554E830026AEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		204FBED819554E830026AEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE69DBC7ED14ACC88FEA5E6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_yelp/ios_yelp-Prefix.pch";
+				INFOPLIST_FILE = "ios_yelp/ios_yelp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		204FBED919554E830026AEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE69DBC7ED14ACC88FEA5E6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_yelp/ios_yelp-Prefix.pch";
+				INFOPLIST_FILE = "ios_yelp/ios_yelp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		204FBEDB19554E830026AEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios_yelp.app/ios_yelp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_yelp/ios_yelp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios_yelpTests/ios_yelpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		204FBEDC19554E830026AEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios_yelp.app/ios_yelp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_yelp/ios_yelp-Prefix.pch";
+				INFOPLIST_FILE = "ios_yelpTests/ios_yelpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		204FBEA619554E830026AEE2 /* Build configuration list for PBXProject "ios_yelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204FBED519554E830026AEE2 /* Debug */,
+				204FBED619554E830026AEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204FBED719554E830026AEE2 /* Build configuration list for PBXNativeTarget "ios_yelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204FBED819554E830026AEE2 /* Debug */,
+				204FBED919554E830026AEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204FBEDA19554E830026AEE2 /* Build configuration list for PBXNativeTarget "ios_yelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204FBEDB19554E830026AEE2 /* Debug */,
+				204FBEDC19554E830026AEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 204FBEA319554E830026AEE2 /* Project object */;
+}

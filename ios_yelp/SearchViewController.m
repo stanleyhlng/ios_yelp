@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "FiltersViewController.h"
 #import "YelpClient.h"
+#import "BusinessTableViewCell.h"
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -17,6 +18,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 @interface SearchViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *businessesTableView;
 @property (nonatomic, strong) YelpClient *client;
 
 @end
@@ -44,6 +46,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                             }];
         
         [self customizeLeftNavBarButtons];
+        [self customizeNavBarTitleView];
         self.title = @"Search";
     }
     return self;
@@ -53,6 +56,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // Configure TableView
+    self.businessesTableView.delegate = self;
+    self.businessesTableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +90,12 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     self.navigationItem.leftBarButtonItem = barButtonItem;
 }
 
+- (void)customizeNavBarTitleView
+{
+    UISearchBar *searchBar = [[UISearchBar alloc] init];    
+    self.navigationItem.titleView = searchBar;
+}
+
 - (void)handleFilterButton
 {
     NSLog(@"handleFilterButton");
@@ -92,6 +105,49 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     
     [self presentViewController:nvc animated:YES completion:nil];
+}
+
+# pragma mark - TableView Delegate Methods
+
+/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    int selectedRow = indexPath.row;
+    NSLog(@"touch on row %d", selectedRow);
+}
+ */
+
+# pragma mark - TableView DataSource Methods
+
+/*
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    /*
+    static NSString *CellIdentifier = @"BusinessTableViewCell";
+
+    BusinessTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    cell.nameLabel.text = @"abc";
+    */
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    cell.textLabel.text = @"Hello";
+    
+    return cell;
 }
 
 @end

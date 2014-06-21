@@ -143,10 +143,9 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     cell.nameLabel.text = name;
     
     // Photo Box
-    // Movie Thumbnail
     [cell.photoBoxImageView setAlpha:0.0f];
     [cell.photoBoxImageView setImageWithURL:[NSURL URLWithString:business[@"image_url"]]
-                           placeholderImage:[UIImage imageNamed:@"image-photo-box-placeholder"]
+                           placeholderImage:[UIImage imageNamed:@"photo-box-placeholder"]
                                   completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                                       // Fade in image
                                       [UIView beginAnimations:@"fade in" context:nil];
@@ -154,8 +153,18 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                                       [cell.photoBoxImageView setAlpha:1.0f];
                                       [UIView commitAnimations];
                                   }
-                usingActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite
-     ];
+                usingActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
+    
+    // Rating
+    [cell.ratingImageView setImageWithURL:[NSURL URLWithString:business[@"rating_img_url"]]
+                           placeholderImage:nil
+                                  completed:nil];
+    
+    // Distance: TODO
+    
+    // Review Count
+    NSString *count = [NSString stringWithFormat:@"%@ Reviews", business[@"review_count"]];
+    cell.reviewCountLabel.text = count;
     
     return cell;
 }

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BusinessTableViewCell : UITableViewCell
-
+@property (weak, nonatomic) IBOutlet UIView *ContentView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *reviewCountLabel;

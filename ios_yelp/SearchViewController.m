@@ -51,7 +51,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     [self.businessesTableView registerNib:[UINib nibWithNibName:@"BusinessTableViewCell"
                                                          bundle:nil]
                    forCellReuseIdentifier:@"BusinessTableViewCell"];
-    [self.businessesTableView setRowHeight:80.0f];
+
+    [self.businessesTableView setRowHeight:120.0f];
     
     [self doFetch];
 }
@@ -140,7 +141,9 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     // Name
     NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
+    cell.nameLabel.numberOfLines = 0;
     cell.nameLabel.text = name;
+    cell.nameLabel.backgroundColor = [UIColor orangeColor];
     
     // Photo Box
     [cell.photoBoxImageView setAlpha:0.0f];

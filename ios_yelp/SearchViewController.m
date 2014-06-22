@@ -13,6 +13,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "GSProgressHUD.h"
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -54,7 +55,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
     [self.businessesTableView setRowHeight:110.0f];
     
-    [self doFetch];
+    [self doFetch:@"Thai"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,11 +77,12 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 - (void)customizeNavBarTitleView
 {
-    UISearchBar *searchBar = [[UISearchBar alloc] init];    
+    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    searchBar.delegate = self;
     self.navigationItem.titleView = searchBar;
 }
 
-- (void)doFetch
+- (void)doFetch:(NSString *)term
 {
     // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
     self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKey
@@ -88,16 +90,22 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                                               accessToken:kYelpToken
                                              accessSecret:kYelpTokenSecret];
     
-    [self.client searchWithTerm:@"Thai"
+    [GSProgressHUD show];
+
+    [self.client searchWithTerm:term
                         success:^(AFHTTPRequestOperation *operation, id response) {
                             //NSLog(@"response: %@", response);
                             
                             self.businesses = response[@"businesses"];
 
                             [self.businessesTableView reloadData];
+                            
+                            [GSProgressHUD dismiss];
                         }
                         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                             NSLog(@"error: %@", [error description]);
+
+                            [GSProgressHUD dismiss];
                         }];
 }
 
@@ -151,7 +159,12 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                                       [UIView commitAnimations];
                                   }
                 usingActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
-    
+
+    // Name
+    NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
+    cell.nameLabel.numberOfLines = 0;
+    cell.nameLabel.text = name;
+
     // Rating
     [cell.ratingImageView setImageWithURL:[NSURL URLWithString:business[@"rating_img_url"]]
                            placeholderImage:nil
@@ -165,8 +178,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSArray *addressList = business[@"location"][@"address"];
     addressList = [addressList arrayByAddingObjectsFromArray:business[@"location"][@"neighborhoods"]];
     NSString *address = [addressList componentsJoinedByString:@", "];
-    //NSLog(@"address_list: %@", addressList);
-    //NSLog(@"address: %@", address);
     cell.addressLabel.text = address;
     
     // Categories
@@ -177,13 +188,18 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSString *category = [categoryList componentsJoinedByString:@", "];
     cell.categoriesLabel.text = category;
     
-    // Name
-    NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
-    cell.nameLabel.numberOfLines = 0;
-    cell.nameLabel.text = name;
-    //cell.nameLabel.backgroundColor = [UIColor orangeColor];
-    
     return cell;
+}
+
+# pragma mark - UISearchBar Methods
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    NSLog(@"searchBarSearchButtonClicked %@", searchBar.text);
+    
+    [searchBar resignFirstResponder];
+
+    [self doFetch:searchBar.text];
 }
 
 @end

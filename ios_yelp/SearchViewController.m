@@ -160,11 +160,27 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                            placeholderImage:nil
                                   completed:nil];
     
-    // Distance: TODO
-    
     // Review Count
     NSString *count = [NSString stringWithFormat:@"%@ Reviews", business[@"review_count"]];
     cell.reviewCountLabel.text = count;
+    
+    // Address
+    NSArray *addressList = business[@"location"][@"address"];
+    addressList = [addressList arrayByAddingObjectsFromArray:business[@"location"][@"neighborhoods"]];
+    NSString *address = [addressList componentsJoinedByString:@", "];
+    //NSLog(@"address_list: %@", addressList);
+    //NSLog(@"address: %@", address);
+    cell.addressLabel.text = address;
+    
+    // Categories
+    NSMutableArray *categoryList = [[NSMutableArray alloc] init];
+    for (id object in business[@"categories"]) {
+        [categoryList addObject:object[0]];
+    }
+    NSString *category = [categoryList componentsJoinedByString:@", "];
+    cell.categoriesLabel.text = category;
+    
+    // Distance: TODO
     
     return cell;
 }

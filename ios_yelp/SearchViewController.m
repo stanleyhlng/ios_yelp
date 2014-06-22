@@ -52,7 +52,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
                                                          bundle:nil]
                    forCellReuseIdentifier:@"BusinessTableViewCell"];
 
-    [self.businessesTableView setRowHeight:120.0f];
+    [self.businessesTableView setRowHeight:110.0f];
     
     [self doFetch];
 }
@@ -139,12 +139,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSDictionary *business = self.businesses[indexPath.row];
     NSLog(@"business: %@", business);
     
-    // Name
-    NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
-    cell.nameLabel.numberOfLines = 0;
-    cell.nameLabel.text = name;
-    cell.nameLabel.backgroundColor = [UIColor orangeColor];
-    
     // Photo Box
     [cell.photoBoxImageView setAlpha:0.0f];
     [cell.photoBoxImageView setImageWithURL:[NSURL URLWithString:business[@"image_url"]]
@@ -183,7 +177,11 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSString *category = [categoryList componentsJoinedByString:@", "];
     cell.categoriesLabel.text = category;
     
-    // Distance: TODO
+    // Name
+    NSString *name = [NSString stringWithFormat:@"%d. %@", indexPath.row + 1, business[@"name"]];
+    cell.nameLabel.numberOfLines = 0;
+    cell.nameLabel.text = name;
+    //cell.nameLabel.backgroundColor = [UIColor orangeColor];
     
     return cell;
 }

@@ -234,6 +234,8 @@
         UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryView = switchView;
+        [switchView setTintColor:[AVHexColor colorWithHexString:@"#BA0C03"]];
+        [switchView setOnTintColor:[AVHexColor colorWithHexString:@"#BA0C03"]];
         [switchView setTag:indexPath.row];
         [switchView setOn:[row[@"is_selected"] boolValue] animated:NO];
         [switchView addTarget:self action:@selector(handleFilterForMostPopular:) forControlEvents:UIControlEventValueChanged];
@@ -283,6 +285,8 @@
             UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.accessoryView = switchView;
+            [switchView setTintColor:[AVHexColor colorWithHexString:@"#BA0C03"]];
+            [switchView setOnTintColor:[AVHexColor colorWithHexString:@"#BA0C03"]];
             [switchView setTag:indexPath.row];
             [switchView setOn:[row[@"is_selected"] boolValue] animated:NO];
             [switchView addTarget:self action:@selector(handleFilterForCategories:) forControlEvents:UIControlEventValueChanged];

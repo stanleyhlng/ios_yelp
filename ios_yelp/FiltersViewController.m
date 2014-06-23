@@ -10,6 +10,10 @@
 
 @interface FiltersViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *filtersTableView;
+@property (nonatomic, assign) NSInteger collapsedSectionIndex;
+@property (nonatomic, strong) NSArray *filters;
+
 @end
 
 @implementation FiltersViewController
@@ -18,10 +22,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
         
         [self customizeLeftNavBarButtons];
         [self customizeRightNavBarButtons];
+        
+        [self initFilters];
         
         self.title = @"Filters";
     }
@@ -31,7 +36,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.filtersTableView.delegate = self;
+    self.filtersTableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,6 +79,78 @@
 - (void)handleSearchButton
 {
     NSLog(@"handleSearchButton");
+}
+
+- (void)initFilters
+{
+    NSLog(@"initFilters");
+    
+    self.filters = @[
+        @{
+            @"name": @"Most Popular"
+        },
+        @{
+            @"name": @"Distance"
+        },
+        @{
+            @"name": @"Sort by"
+        },
+        @{
+            @"name": @"Categories"
+        }
+    ];
+    
+    NSLog(@"filters: %@", self.filters);
+}
+
+# pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    int previousCollapsedIndex = self.collapsedSectionIndex;
+
+    self.collapsedSectionIndex = indexPath.section;
+
+    NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSetWithIndex:previousCollapsedIndex];
+    [indexSet addIndex:self.collapsedSectionIndex];
+    
+    [self.filtersTableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    headerView.backgroundColor = [UIColor colorWithRed:(arc4random() % 256 / 255.0f) green:(arc4random() % 256 / 255.0f) blue:(arc4random() % 256 / 255.0f) alpha:1.0f];
+    return headerView;
+}
+
+# pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 10;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (self.collapsedSectionIndex == section) {
+        return 1;
+    }
+    else {
+        return 10;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    NSLog(@"section: %d, row %d", indexPath.section, indexPath.row);
+    cell.textLabel.text = [NSString stringWithFormat:@"section: %d, row %d", indexPath.section, indexPath.row];
+    
+    return cell;
 }
 
 @end

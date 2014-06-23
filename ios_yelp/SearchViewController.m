@@ -14,6 +14,7 @@
 #import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "GSProgressHUD.h"
+#import "Yelp.h"
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -23,6 +24,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @interface SearchViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *businessesTableView;
+@property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, strong) YelpClient *client;
 @property (nonatomic, strong) NSArray *businesses;
 
@@ -55,7 +57,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
     [self.businessesTableView setRowHeight:110.0f];
     
-    [self doFetch:@"Thai"];
+    [self doFetch:@""];
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,9 +79,26 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 - (void)customizeNavBarTitleView
 {
-    UISearchBar *searchBar = [[UISearchBar alloc] init];
-    searchBar.delegate = self;
-    self.navigationItem.titleView = searchBar;
+    self.searchBar = [[UISearchBar alloc] init];
+    self.searchBar.delegate = self;
+    self.navigationItem.titleView = self.searchBar;
+    
+    self.searchBar.searchBarStyle = UISearchBarStyleMinimal | UISearchBarStyleDefault;
+    
+    for (UIView *subView in self.searchBar.subviews)
+    {
+        for (UIView *secondLevelSubview in subView.subviews){
+            if ([secondLevelSubview isKindOfClass:[UITextField class]])
+            {
+                UITextField *searchBarTextField = (UITextField *)secondLevelSubview;
+                
+                //set font color here
+                searchBarTextField.textColor = [UIColor whiteColor];
+                
+                break;
+            }
+        }
+    }
 }
 
 - (void)doFetch:(NSString *)term
@@ -92,7 +111,16 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     [GSProgressHUD show];
 
-    [self.client searchWithTerm:term
+    NSMutableDictionary *params = [[Yelp instance] getSearchParams];
+    
+    params[@"term"] = term;
+    if ([params[@"term"] isEqualToString:@""]) {
+        params[@"term"] = @"Thai";
+    }
+    
+    NSLog(@"params: %@", params);
+    
+    [self.client searchWithParams:params
                         success:^(AFHTTPRequestOperation *operation, id response) {
                             //NSLog(@"response: %@", response);
                             
@@ -207,6 +235,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (void)searchButtonClicked:(FiltersViewController *)controller message:(NSString *)message
 {
     NSLog(@"searchButtonClicked %@", message);
+    
+    //NSLog(@"params: %@", [[Yelp instance] getSearchParams]);
+    
+    [self doFetch:self.searchBar.text];
 }
 
 @end

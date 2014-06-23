@@ -13,5 +13,6 @@
 @property (nonatomic, strong) NSArray *filters;
 
 + (instancetype)instance;
+- (NSMutableDictionary *)getSearchParams;
 
 @end

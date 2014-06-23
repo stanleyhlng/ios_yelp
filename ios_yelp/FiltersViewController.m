@@ -90,7 +90,9 @@
 {
     NSLog(@"handleSearchButton");
     
-    [self.delegate searchButtonClicked:self message:@"handleSearchButton"];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.delegate searchButtonClicked:self message:@"handleSearchButton"];
+    }];
 }
 
 - (void)handleFilterForMostPopular:(id)sender

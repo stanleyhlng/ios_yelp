@@ -36,7 +36,7 @@
                      @{@"name": @"5 miles",   @"value": [NSNumber numberWithFloat:8046.72]},
                      @{@"name": @"20 miles",  @"value": [NSNumber numberWithFloat:32186.9]}
                      ],
-             @"selected": [NSNumber numberWithInt:1]
+             @"selected": [NSNumber numberWithInt:0]
              } mutableCopy],
          [@{
              @"name": @"Sort by",
@@ -46,7 +46,7 @@
                      @{@"name": @"Distance",      @"value": [NSNumber numberWithInt:1]},
                      @{@"name": @"Rating",        @"value": [NSNumber numberWithInt:2]}
                      ],
-             @"selected": [NSNumber numberWithInt:1]
+             @"selected": [NSNumber numberWithInt:0]
              } mutableCopy],
          @{
              @"name": @"Categories",
@@ -106,6 +106,31 @@
     });
     
     return yelp;
+}
+
+- (NSMutableDictionary *)getSearchParams
+{
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    
+    // http://www.yelp.com/developers/documentation/v2/search_api
+    params[@"term"] = @"";
+    params[@"limit"] = [NSNumber numberWithInt:20];
+    params[@"offset"] = [NSNumber numberWithInt:0];
+    params[@"sort"] = self.filters[2][@"options"][[self.filters[2][@"selected"] intValue]][@"value"];
+    
+    NSMutableArray *selectedCategories = [[NSMutableArray alloc] init];
+    for (id object in self.filters[3][@"options"]) {
+        if ([object[@"is_selected"] boolValue] == YES) {
+            [selectedCategories addObject:object[@"value"]];
+        }
+    }
+    params[@"category_filter"] = [selectedCategories componentsJoinedByString:@","];
+    params[@"radius_filter"] = self.filters[1][@"options"][[self.filters[1][@"selected"] intValue]][@"value"];
+    params[@"deals_filter"] = self.filters[0][@"options"][0][@"is_selected"];
+    params[@"location"] = @"San Jose";
+    params[@"cll"] = @"37.400428,-121.925681";
+    
+    return params;
 }
 
 @end

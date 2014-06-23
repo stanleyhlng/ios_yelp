@@ -8,10 +8,12 @@
 
 #import "FiltersViewController.h"
 #import "Yelp.h"
+#import "AVHexColor.h"
 
 @interface FiltersViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *filtersTableView;
+@property (strong, nonatomic) NSMutableDictionary *collapsedSectionIndex;
 //@property (nonatomic, assign) NSInteger collapsedSectionIndex;
 
 @end
@@ -27,6 +29,13 @@
         [self customizeRightNavBarButtons];
         
         self.title = @"Filters";
+        
+        self.collapsedSectionIndex = [@{
+            @"Most Popular":    [NSNumber numberWithBool:NO],
+            @"Distance":        [NSNumber numberWithBool:YES],
+            @"Sort by":         [NSNumber numberWithBool:YES],
+            @"Categories":      [NSNumber numberWithBool:YES]
+        } mutableCopy];
     }
     return self;
 }
@@ -99,6 +108,37 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    NSLog(@"did select row at index path: section %d, row %d", indexPath.section, indexPath.row);
+
+    NSDictionary *filter = [Yelp instance].filters[indexPath.section];
+    
+    if ([filter[@"name"] isEqualToString:@"Most Popular"]) {
+        // MOST POPULAR
+    }
+    else if ([filter[@"name"] isEqualToString:@"Distance"]) {
+        // DISTANCE
+        
+        if ([self.collapsedSectionIndex[@"Distance"] boolValue] == NO) {
+            // update state
+            self.collapsedSectionIndex[@"Distance"] = [NSNumber numberWithBool:YES];
+
+            // update data
+            [Yelp instance].filters[indexPath.section][@"selected"] = [NSNumber numberWithInt:indexPath.row];
+        }
+        else {
+            // update state
+            self.collapsedSectionIndex[@"Distance"] = [NSNumber numberWithBool:NO];
+        }
+    }
+    else if ([filter[@"name"] isEqualToString:@"Sort by"]) {
+        // SORT BY
+    }
+    else if ([filter[@"name"] isEqualToString:@"Categories"]) {
+        // CATEGORIES
+    }
+    
+    [self.filtersTableView reloadData];
 /*
     int previousCollapsedIndex = self.collapsedSectionIndex;
 
@@ -120,7 +160,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return ((NSArray *)[[Yelp instance].filters objectAtIndex:section][@"options"]).count;
+    NSDictionary *filter = [[Yelp instance].filters objectAtIndex:section];
+    if ([self.collapsedSectionIndex[filter[@"name"]] boolValue]) {
+        return 1;
+    }
+    else {
+        return ((NSArray *)filter[@"options"]).count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -138,6 +184,7 @@
         cell.textLabel.text = row[@"name"];
         
         UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryView = switchView;
         [switchView setTag:indexPath.row];
         [switchView setOn:[row[@"is_selected"] boolValue] animated:NO];
@@ -145,6 +192,19 @@
     }
     else if ([filter[@"name"] isEqualToString:@"Distance"]) {
         // DISTANCE
+        int idx = [filter[@"selected"] intValue];
+
+        if ([self.collapsedSectionIndex[@"Distance"] boolValue] == YES) {
+            row = filter[@"options"][idx];
+            cell.textLabel.text = row[@"name"];
+        }
+        else {
+            if (idx == indexPath.row) {
+                cell.backgroundColor = [AVHexColor colorWithHexString:@"#BA0C03"];
+                cell.textLabel.textColor = [UIColor whiteColor];
+            }
+            cell.textLabel.text = row[@"name"];
+        }
     }
     else if ([filter[@"name"] isEqualToString:@"Sort by"]) {
         // SORT BY

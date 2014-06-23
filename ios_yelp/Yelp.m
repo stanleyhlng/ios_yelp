@@ -26,7 +26,7 @@
                      [@{@"name": @"Offering a Deal", @"is_selected": [NSNumber numberWithBool:NO]} mutableCopy]
                      ]
              },
-         @{
+         [@{
              @"name": @"Distance",
              @"options":
                  @[
@@ -36,8 +36,8 @@
                      @{@"name": @"5 miles",   @"value": [NSNumber numberWithFloat:8046.72]},
                      @{@"name": @"20 miles",  @"value": [NSNumber numberWithFloat:32186.9]}
                      ],
-             @"selected": [NSNumber numberWithInt:0]
-             },
+             @"selected": [NSNumber numberWithInt:1]
+             } mutableCopy],
          @{
              @"name": @"Sort by",
              @"options":

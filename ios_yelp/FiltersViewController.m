@@ -113,32 +113,47 @@
 
     NSDictionary *filter = [Yelp instance].filters[indexPath.section];
     
+    NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSetWithIndex:indexPath.section];
+    
     if ([filter[@"name"] isEqualToString:@"Most Popular"]) {
         // MOST POPULAR
     }
     else if ([filter[@"name"] isEqualToString:@"Distance"]) {
         // DISTANCE
         
-        if ([self.collapsedSectionIndex[@"Distance"] boolValue] == NO) {
+        if ([self.collapsedSectionIndex[filter[@"name"]] boolValue] == NO) {
             // update state
-            self.collapsedSectionIndex[@"Distance"] = [NSNumber numberWithBool:YES];
+            self.collapsedSectionIndex[filter[@"name"]] = [NSNumber numberWithBool:YES];
 
             // update data
             [Yelp instance].filters[indexPath.section][@"selected"] = [NSNumber numberWithInt:indexPath.row];
         }
         else {
             // update state
-            self.collapsedSectionIndex[@"Distance"] = [NSNumber numberWithBool:NO];
+            self.collapsedSectionIndex[filter[@"name"]] = [NSNumber numberWithBool:NO];
         }
     }
     else if ([filter[@"name"] isEqualToString:@"Sort by"]) {
         // SORT BY
+        
+        if ([self.collapsedSectionIndex[filter[@"name"]] boolValue] == NO) {
+            // update state
+            self.collapsedSectionIndex[filter[@"name"]] = [NSNumber numberWithBool:YES];
+            
+            // update data
+            [Yelp instance].filters[indexPath.section][@"selected"] = [NSNumber numberWithInt:indexPath.row];
+        }
+        else {
+            // update state
+            self.collapsedSectionIndex[filter[@"name"]] = [NSNumber numberWithBool:NO];
+        }
     }
     else if ([filter[@"name"] isEqualToString:@"Categories"]) {
         // CATEGORIES
     }
     
-    [self.filtersTableView reloadData];
+    [self.filtersTableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+    //[self.filtersTableView reloadData];
 /*
     int previousCollapsedIndex = self.collapsedSectionIndex;
 
@@ -194,7 +209,7 @@
         // DISTANCE
         int idx = [filter[@"selected"] intValue];
 
-        if ([self.collapsedSectionIndex[@"Distance"] boolValue] == YES) {
+        if ([self.collapsedSectionIndex[filter[@"name"]] boolValue] == YES) {
             row = filter[@"options"][idx];
             cell.textLabel.text = row[@"name"];
         }
@@ -208,6 +223,19 @@
     }
     else if ([filter[@"name"] isEqualToString:@"Sort by"]) {
         // SORT BY
+        int idx = [filter[@"selected"] intValue];
+        
+        if ([self.collapsedSectionIndex[filter[@"name"]] boolValue] == YES) {
+            row = filter[@"options"][idx];
+            cell.textLabel.text = row[@"name"];
+        }
+        else {
+            if (idx == indexPath.row) {
+                cell.backgroundColor = [AVHexColor colorWithHexString:@"#BA0C03"];
+                cell.textLabel.textColor = [UIColor whiteColor];
+            }
+            cell.textLabel.text = row[@"name"];
+        }
     }
     else if ([filter[@"name"] isEqualToString:@"Categories"]) {
         // CATEGORIES

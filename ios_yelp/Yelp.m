@@ -38,7 +38,7 @@
                      ],
              @"selected": [NSNumber numberWithInt:1]
              } mutableCopy],
-         @{
+         [@{
              @"name": @"Sort by",
              @"options":
                  @[
@@ -46,8 +46,8 @@
                      @{@"name": @"Distance",      @"value": [NSNumber numberWithInt:1]},
                      @{@"name": @"Rating",        @"value": [NSNumber numberWithInt:2]}
                      ],
-             @"selected": [NSNumber numberWithInt:0]
-             },
+             @"selected": [NSNumber numberWithInt:1]
+             } mutableCopy],
          @{
              @"name": @"Categories",
              @"options":

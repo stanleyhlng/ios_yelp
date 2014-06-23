@@ -89,6 +89,8 @@
 - (void)handleSearchButton
 {
     NSLog(@"handleSearchButton");
+    
+    [self.delegate searchButtonClicked:self message:@"handleSearchButton"];
 }
 
 - (void)handleFilterForMostPopular:(id)sender

@@ -113,8 +113,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 {
     NSLog(@"handleFilterButton");
     
-    UIViewController *vc = [[FiltersViewController alloc] init];
-    
+    FiltersViewController *vc = [[FiltersViewController alloc] init];
+    vc.delegate = self;
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     
     [self presentViewController:nvc animated:YES completion:nil];
@@ -200,6 +200,13 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     [searchBar resignFirstResponder];
 
     [self doFetch:searchBar.text];
+}
+
+# pragma mark - FiltersViewController Methods
+
+- (void)searchButtonClicked:(FiltersViewController *)controller message:(NSString *)message
+{
+    NSLog(@"searchButtonClicked %@", message);
 }
 
 @end

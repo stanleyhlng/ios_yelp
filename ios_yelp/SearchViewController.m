@@ -176,6 +176,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NSLog(@"business: %@", business);
     
     // Photo Box
+    [cell.photoBoxImageView.layer setMasksToBounds:YES];
+    [cell.photoBoxImageView.layer setCornerRadius:10.0f];
     [cell.photoBoxImageView setAlpha:0.0f];
     [cell.photoBoxImageView setImageWithURL:[NSURL URLWithString:business[@"image_url"]]
                            placeholderImage:[UIImage imageNamed:@"photo-box-placeholder"]

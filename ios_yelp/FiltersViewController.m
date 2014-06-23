@@ -119,18 +119,48 @@
     [self.filtersTableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
+/*
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    headerView.backgroundColor = [UIColor colorWithRed:(arc4random() % 256 / 255.0f) green:(arc4random() % 256 / 255.0f) blue:(arc4random() % 256 / 255.0f) alpha:1.0f];
+    NSLog(@"view for header in section %d", section);
+    
+    NSDictionary *filter = [self.filters objectAtIndex:section];
+    NSString *title = filter[@"name"];
+    NSLog(@"name: %@", title);
+    
+    UIFont *customFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0f];
+    CGSize labelSize = [title sizeWithAttributes:
+  @{
+    @"NSFontAttributeName":customFont
+    }];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, labelSize.width, labelSize.height)];
+    label.text = title;
+    label.font = customFont;
+    label.numberOfLines = 1;
+    label.baselineAdjustment = UIBaselineAdjustmentAlignBaselines; // or UIBaselineAdjustmentAlignCenters, or UIBaselineAdjustmentNone
+    label.adjustsFontSizeToFitWidth = YES;
+    label.minimumScaleFactor = 10.0f/12.0f;;
+    label.clipsToBounds = YES;
+    label.backgroundColor = [UIColor redColor];
+    label.textColor = [UIColor blackColor];
+    label.textAlignment = NSTextAlignmentLeft;
+    [label sizeToFit];
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 150)];
+    //headerView.backgroundColor = [UIColor colorWithRed:(arc4random() % 256 / 255.0f) green:(arc4random() % 256 / 255.0f) blue:(arc4random() % 256 / 255.0f) alpha:1.0f];
+    //return headerView;
+    
+    [headerView addSubview:label];
     return headerView;
 }
+ */
+
 
 # pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    return self.filters.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -151,6 +181,11 @@
     cell.textLabel.text = [NSString stringWithFormat:@"section: %d, row %d", indexPath.section, indexPath.row];
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [self.filters objectAtIndex:section][@"name"];
 }
 
 @end

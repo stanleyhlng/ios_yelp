@@ -27,6 +27,7 @@
 		204FBEEE195614240026AEE2 /* FiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEEC195614240026AEE2 /* FiltersViewController.xib */; };
 		204FBEF3195621320026AEE2 /* BusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEF1195621320026AEE2 /* BusinessTableViewCell.m */; };
 		204FBEF4195621320026AEE2 /* BusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204FBEF2195621320026AEE2 /* BusinessTableViewCell.xib */; };
+		204FBEFD1957D2EB0026AEE2 /* Yelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 204FBEFC1957D2EB0026AEE2 /* Yelp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		204FBEF0195621320026AEE2 /* BusinessTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessTableViewCell.h; sourceTree = "<group>"; };
 		204FBEF1195621320026AEE2 /* BusinessTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessTableViewCell.m; sourceTree = "<group>"; };
 		204FBEF2195621320026AEE2 /* BusinessTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessTableViewCell.xib; sourceTree = "<group>"; };
+		204FBEFB1957D2EB0026AEE2 /* Yelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yelp.h; sourceTree = "<group>"; };
+		204FBEFC1957D2EB0026AEE2 /* Yelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yelp.m; sourceTree = "<group>"; };
 		AFE69DBC7ED14ACC88FEA5E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +134,7 @@
 		204FBEB419554E830026AEE2 /* ios_yelp */ = {
 			isa = PBXGroup;
 			children = (
+				204FBEFA1957D26E0026AEE2 /* Data */,
 				204FBEEF195621140026AEE2 /* UI */,
 				204FBEE8195605C20026AEE2 /* Controllers */,
 				204FBEE7195605B90026AEE2 /* Clients */,
@@ -241,6 +245,15 @@
 				204FBEF2195621320026AEE2 /* BusinessTableViewCell.xib */,
 			);
 			name = Business;
+			sourceTree = "<group>";
+		};
+		204FBEFA1957D26E0026AEE2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				204FBEFB1957D2EB0026AEE2 /* Yelp.h */,
+				204FBEFC1957D2EB0026AEE2 /* Yelp.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +391,7 @@
 			files = (
 				204FBEE61955FF590026AEE2 /* YelpClient.m in Sources */,
 				204FBEF3195621320026AEE2 /* BusinessTableViewCell.m in Sources */,
+				204FBEFD1957D2EB0026AEE2 /* Yelp.m in Sources */,
 				204FBEBF19554E830026AEE2 /* AppDelegate.m in Sources */,
 				204FBEE219554FA40026AEE2 /* SearchViewController.m in Sources */,
 				204FBEED195614240026AEE2 /* FiltersViewController.m in Sources */,
